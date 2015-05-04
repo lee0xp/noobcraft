@@ -33,11 +33,6 @@ public class GuiMainScreen extends GuiScreen
 	
 	public void initGui()
 	{
-		if (!Vars.loggedIn)
-		{
-			this.mc.displayGuiScreen(new GuiLogin());
-			return;
-		}
 		
 		if (!alert && Vars.debug)
 		{
