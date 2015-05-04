@@ -33,54 +33,6 @@ public class GuiMainScreen extends GuiScreen
 	
 	public void initGui()
 	{
-		
-		if (!alert && Vars.debug)
-		{
-			alert = true;
-			List<String> alerts = Lists.newArrayList();
-			
-			boolean deob = false;
-			boolean eclipse = false;
-			
-			try
-			{
-				Class.forName("ClientDebugger");
-				deob = true;
-			} catch (Exception e)
-			{
-				
-			}
-			
-			if (deob)
-				alerts.add("§eYou are running in a deobfuscated environment!");
-			if (eclipse)
-				alerts.add("§eThe client was started trough the eclipse Bootstrapper class!");
-			
-			alerts.add("");
-			alerts.add("§a§lClient classlist");
-			
-			String classes = "";
-			int i = 0;
-			
-			if (deob)
-				for (Class clazz : ClassFinder.find("de.lee0xp.client"))
-				{
-					if (i < 5)
-						classes += clazz.getName().replace("de.lee0xp.client.hacks.", "").replace("de.lee0xp.client.gui.", "").replace("de.lee0xp.client.hackutil.", "")
-								.replace("de.lee0xp.client.plugin.interfaces.", "").replace("de.lee0xp.client.plugin.", "").replace("de.lee0xp.client.", "")
-								+ ", ";
-					else
-					{
-						alerts.add(classes);
-						classes = "";
-						i = -1;
-					}
-					i++;
-				}
-			
-			if (deob)
-				Alert.alert(alerts, "§c§lWarning!", this, false, null, null);
-		}
 		int var3 = this.height / 4 + 48;
 		
 		// id, we, he, up, left, text
