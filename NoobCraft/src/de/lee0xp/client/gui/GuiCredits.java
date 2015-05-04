@@ -26,7 +26,6 @@ public class GuiCredits extends GuiScreen
 	
 	private static final Logger logger = LogManager.getLogger();
 	private static final ResourceLocation field_146576_f = new ResourceLocation("textures/gui/title/minecraft.png");
-	//private static final ResourceLocation field_146577_g = new ResourceLocation("textures/misc/vignette.png");
 	private int field_146581_h;
 	private List texts;
 	private int field_146579_r;
@@ -174,17 +173,7 @@ public class GuiCredits extends GuiScreen
 		int var11;
 		for (var11 = 0; var11 < this.texts.size(); ++var11)
 		{
-			/*if (var11 == this.texts.size() - 0)
-			{
-				float var12 = (float) var10 + var9 - (float) (this.height / 2 - 6);
-				
-				if (var12 < 0.0F)
-				{
-					GlStateManager.translate(0.0F, -var12, 0.0F);
-				}
-			}*/
-			
-			if ((float) var10 + var9 + 12.0F + 8.0F > 0.0F && (float) var10 + var9 < (float) this.height)
+			 if ((float) var10 + var9 + 12.0F + 8.0F > 0.0F && (float) var10 + var9 < (float) this.height)
 			{
 				String var13 = (String) this.texts.get(var11);
 				

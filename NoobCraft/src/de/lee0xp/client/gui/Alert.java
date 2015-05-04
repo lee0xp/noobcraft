@@ -22,13 +22,14 @@ public class Alert
 		
 		Minecraft.getMinecraft().displayGuiScreen(new GuiScreen()
 		{
+			
 			public void drawScreen(int mouseX, int mouseY, float partialTicks)
 			{
 				this.drawBackground(0);
 				int i = 50;
 				for (String s : text)
 				{
-					this.drawCenteredString(this.fontRendererObj, s, this.width / 2, this.height /2 - (i+10), 16777215);
+					this.drawCenteredString(this.fontRendererObj, s, this.width / 2, this.height / 2 - (i + 10), 16777215);
 					i -= 10;
 				}
 				this.drawCenteredString(this.fontRendererObj, title, this.width / 2, 30, 16777215);
@@ -53,13 +54,7 @@ public class Alert
 					else
 						t.start();
 					
-					/*
-					 * DEBUG CODE HERE
-					 */
-					
-					//this.mc.displayGuiScreen(new GuiCredits());
-				}
-				else if (button.id == 1)
+				} else if (button.id == 1)
 				{
 					if (t2 == null)
 						System.exit(0);
@@ -151,8 +146,7 @@ public class Alert
 				{
 					t.actionCancelled();
 				}
-				
-				//Minecraft.getMinecraft().displayGuiScreen(gc);
+				 
 			}
 			
 		});

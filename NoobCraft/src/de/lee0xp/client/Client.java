@@ -47,21 +47,25 @@ public class Client
 	{
 		INSTANCE = this;
 		ncFile = new File("NoobCraft/");
-		if (!ncFile.exists()){
+		if (!ncFile.exists())
+		{
 			ncFile.mkdir();
 		}
 		mc = Minecraft.getMinecraft();
-	
+		
 		mm = new ModManager(this, mc);
-
+		
 		manager = new ExampleGuiManager();
 		initModsGui();
 		friends = new Util();
 		pl = new PluginLoader();
 		fontrender = new UnicodeFontRenderer(new Font("Arial", Font.PLAIN, 20));
+		File pluginsDir = new File("NoobCraft/plugins");
+		if (!pluginsDir.exists())
+			pluginsDir.mkdir();
 		try
 		{
-			for (File f : new File("NoobCraft/plugins/").listFiles())
+			for (File f : pluginsDir.listFiles())
 			{
 				if (f.toString().endsWith(".jar"))
 				{
@@ -70,7 +74,6 @@ public class Client
 			}
 		} catch (Exception e)
 		{
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -90,13 +93,11 @@ public class Client
 	
 	public void showGui()
 	{
-		//Client.INSTANCE.mm = new ModManager(Client.getInstance(), Minecraft.getMinecraft());
+ 
 		Client.INSTANCE.manager = new ExampleGuiManager();
 		Client.INSTANCE.modsGui = new ModsGui(Client.INSTANCE.manager);
-		Client.INSTANCE.manager.setTheme(new SimpleTheme());
-		//	mc.thePlayer.sendChatMessage(".reloadTheme");
-		manager.setup();
-		//sendMessage(prefix + "§eOpening the gui...");
+		Client.INSTANCE.manager.setTheme(new SimpleTheme()); 
+		manager.setup(); 
 		mc.displayGuiScreen(modsGui);
 	}
 	

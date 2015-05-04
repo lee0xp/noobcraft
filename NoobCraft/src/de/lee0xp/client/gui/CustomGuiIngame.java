@@ -24,11 +24,6 @@ public class CustomGuiIngame extends GuiIngame
 	@Override
 	public void render(float f)
 	{
-		Minecraft.getMinecraft().thePlayer.worldObj.setRainStrength(0);
-		
-		/*	C0BPacketEntityAction p = new C0BPacketEntityAction(Minecraft.theMinecraft.thePlayer, Action.START_SNEAKING);
-			Client.getInstance().sendPacket(p);
-			*/
 		if (Minecraft.getMinecraft().thePlayer.isDead)
 		{
 			if (Client.getInstance().getHacks().blink.isEnabled())
@@ -50,29 +45,6 @@ public class CustomGuiIngame extends GuiIngame
 		if (Client.ck.checkKey(Keyboard.KEY_O))
 		{
 			Client.getInstance().showGui();
-		}
-		
-		if (Client.ck.checkKey(Keyboard.KEY_V))
-		{
-			new Thread("FallDown thread")
-			{
-				
-				@Override
-				public void run()
-				{
-					Client.getInstance().getHacks().disableChat();
-					Client.getInstance().getHacks().fly.toggle();
-					try
-					{
-						Thread.sleep(400);
-					} catch (InterruptedException e)
-					{
-						e.printStackTrace();
-					}
-					Client.getInstance().getHacks().fly.toggle();
-					Client.getInstance().getHacks().enableChat();
-				}
-			}.start();
 		}
 		
 		Client.INSTANCE.mm.zoom.onTick();

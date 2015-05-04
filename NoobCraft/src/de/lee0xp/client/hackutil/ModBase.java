@@ -95,7 +95,6 @@ public abstract class ModBase
 	}
 	public Frame getFrame()
 	{
-		// TODO Auto-generated method stub
 		return null;
 	}
 }

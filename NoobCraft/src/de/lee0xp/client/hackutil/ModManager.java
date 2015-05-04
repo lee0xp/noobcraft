@@ -106,7 +106,8 @@ public class ModManager
 		return il;
 	}
 	
-	public ModBase byClass(Class<? extends ModBase> clazz){
+	public ModBase byClass(Class<? extends ModBase> clazz)
+	{
 		for (ModBase mb : getMods())
 		{
 			if (mb.getClass().equals(clazz))

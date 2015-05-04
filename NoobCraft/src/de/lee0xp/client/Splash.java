@@ -5,13 +5,12 @@ import java.util.Random;
 public class Splash
 {
 	
-	private static String[] splashes = new String[]{};
+	private static String[] splashes = new String[] {};
 	
 	public static String random()
 	{
 		splashes = new String[]
-		{ "Beta version!", "played by noobs!", "coded by lee0xp§e!", "§x§eTTF-Fonts!" };
-		
+		{ "Open source!", "Beta version!", "played by noobs!", "coded by lee0xp§e!", "§x§eTTF-Fonts!", "Open source!" };
 		
 		int rand = new Random().nextInt(splashes.length);
 		return splashes[rand];

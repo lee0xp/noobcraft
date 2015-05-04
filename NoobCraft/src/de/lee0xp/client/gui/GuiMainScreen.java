@@ -1,7 +1,6 @@
 package de.lee0xp.client.gui;
 
 import java.io.IOException;
-import java.util.List;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
@@ -14,13 +13,8 @@ import net.minecraft.client.renderer.Tessellator;
 import net.minecraft.client.renderer.WorldRenderer;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.ResourceLocation;
-
-import com.google.common.collect.Lists;
-
 import de.lee0xp.client.Client;
 import de.lee0xp.client.Splash;
-import de.lee0xp.client.Vars;
-import de.lee0xp.client.hackutil.ClassFinder;
 
 public class GuiMainScreen extends GuiScreen
 {
