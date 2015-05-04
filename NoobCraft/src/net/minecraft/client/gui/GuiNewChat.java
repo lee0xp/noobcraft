@@ -17,7 +17,7 @@ import org.darkstorm.minecraft.gui.theme.simple.SimpleTheme;
 import com.google.common.collect.Lists;
 
 import de.lee0xp.client.Client;
-import de.lee0xp.client.hackutil.XenonUtils;
+import de.lee0xp.client.hackutil.RenderUtils;
 
 public class GuiNewChat extends Gui
 {
@@ -95,7 +95,7 @@ public class GuiNewChat extends Gui
 							{
 								byte var15 = 0;
 								int var16 = -var9 * 9;
-								   XenonUtils.drawRect(var15, var16-9, var15 + var8 + 4, var16, var14 / 2 << 24); 
+								   RenderUtils.drawRect(var15, var16-9, var15 + var8 + 4, var16, var14 / 2 << 24); 
 								//drawRect(var15, var16 - 9, var15 + var8 + 4, var16, var14 / 2 << 24);
 								String var17 = var10.getChatComponent().getFormattedText();
 								GlStateManager.enableBlend();

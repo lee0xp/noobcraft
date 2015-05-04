@@ -10,7 +10,7 @@ import com.google.common.base.Predicate;
 import com.google.common.base.Predicates;
 
 import de.lee0xp.client.Client;
-import de.lee0xp.client.hackutil.XenonUtils;
+import de.lee0xp.client.hackutil.RenderUtils;
 
 public class GuiTextField extends Gui
 {
@@ -532,8 +532,8 @@ public class GuiTextField extends Gui
         {
             if (this.getEnableBackgroundDrawing())
             {
-                XenonUtils.drawRect(this.xPosition - 1, this.yPosition - 1, this.xPosition + this.width + 1, this.yPosition + this.height + 1, -6250336);
-                XenonUtils.drawRect(this.xPosition, this.yPosition, this.xPosition + this.width, this.yPosition + this.height, -16777216);
+                RenderUtils.drawRect(this.xPosition - 1, this.yPosition - 1, this.xPosition + this.width + 1, this.yPosition + this.height + 1, -6250336);
+                RenderUtils.drawRect(this.xPosition, this.yPosition, this.xPosition + this.width, this.yPosition + this.height, -16777216);
             }
 
             int var1 = this.isEnabled ? this.enabledColor : this.disabledColor;
@@ -582,7 +582,7 @@ public class GuiTextField extends Gui
             {
                 if (var13)
                 {
-                    XenonUtils.drawRect(var11, var8 - 1, var11 + 1, var8 + 1 + this.fontRendererInstance.FONT_HEIGHT, -3092272);
+                    RenderUtils.drawRect(var11, var8 - 1, var11 + 1, var8 + 1 + this.fontRendererInstance.FONT_HEIGHT, -3092272);
                 }
                 else
                 {

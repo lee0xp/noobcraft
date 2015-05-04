@@ -65,7 +65,7 @@ public class ModsGui extends GuiScreen
 			
 			for (final ModBase mb : Client.getInstance().getHacks().getMods(c))
 			{
-				BasicButton b = new BasicButton(mb.name != null ? mb.name : "nullText");
+				BasicButton b = new BasicButton(mb.name != null ? mb.name : "missing_caption");
 				b.addButtonListener(new ButtonListener()
 				{
 					

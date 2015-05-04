@@ -16,7 +16,7 @@ import de.lee0xp.client.Client;
 import de.lee0xp.client.hackutil.Category;
 import de.lee0xp.client.hackutil.FreecamEntity;
 import de.lee0xp.client.hackutil.ModBase;
-import de.lee0xp.client.hackutil.XenonUtils;
+import de.lee0xp.client.hackutil.RenderUtils;
 
 public class Blink extends ModBase
 {

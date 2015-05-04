@@ -107,7 +107,6 @@ public class GuiCredits extends GuiScreen
 				this.texts.add("");
 				this.texts.add("§7    * §2Slick2D by ninjacave");
 				this.texts.add("§7    * §2GUI API by darkstorm652");
-				this.texts.add("§7    * §2MailAPI by lee0xp");
 				
 				this.field_146579_r = this.texts.size();
 			} catch (Exception var9)

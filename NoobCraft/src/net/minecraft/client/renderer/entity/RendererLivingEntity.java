@@ -3,7 +3,7 @@ package net.minecraft.client.renderer.entity;
 import com.google.common.collect.Lists;
 
 import de.lee0xp.client.Client;
-import de.lee0xp.client.hackutil.XenonUtils;
+import de.lee0xp.client.hackutil.RenderUtils;
 
 import java.nio.FloatBuffer;
 import java.util.Iterator;
@@ -209,11 +209,11 @@ public abstract class RendererLivingEntity extends Render
         }
         
         if (Client.getInstance().getHacks().blink.isEnabled() && p_76986_1_.getName().equals(Minecraft.theMinecraft.thePlayer.getName())){
-        	XenonUtils.drawESP(p_76986_2_, p_76986_4_, p_76986_6_, 255 , 0, 0);
+        	RenderUtils.drawPlayerESP(p_76986_2_, p_76986_4_, p_76986_6_, 255 , 0, 0);
         }
         
         if (Client.getInstance().getHacks().tracer.isEnabled() && p_76986_1_ instanceof EntityPlayer){
-        	XenonUtils.drawESP(p_76986_2_, p_76986_4_, p_76986_6_, 255 , 0, 0);
+        	RenderUtils.drawPlayerESP(p_76986_2_, p_76986_4_, p_76986_6_, 255 , 0, 0);
         }
     }
 
