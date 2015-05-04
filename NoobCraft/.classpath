@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/Users/Lee/Desktop/Server/MCP910/jars/versions/1.8/1.8-natives"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/Lee/AppData/Roaming/.minecraft/versions/1.8/1.8.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Lee/Desktop/Server/MCP910/jars/libraries/authlib-1.5.17.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Lee/Desktop/Server/MCP910/jars/libraries/codecjorbis-20101023.jar"/>
